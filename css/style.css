@@ -172,7 +172,8 @@ p {
   margin-right: 10px;
 }
 
-.contacts-link:hover .address-svg {
+.contacts-link:hover .address-svg,
+.contacts-link:focus .address-svg {
   fill: var(--accent-clr);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -526,7 +527,8 @@ p {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.card-link:hover .overlay {
+.card-link:hover .overlay,
+.card-link:focus .overlay {
   transform: translateY(0);
   opacity: 1;
 }
