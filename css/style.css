@@ -206,7 +206,7 @@ p {
 
 /* Кнопка */
 
-.btn {
+.hero-btn {
   padding: 10px 32px;
   border: 1px solid transparent;
   border-radius: 4px;
@@ -218,9 +218,12 @@ p {
   color: var(--white-text);
   background-color: var(--accent-clr);
   cursor: pointer;
+  outline: none;
+  transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.btn:hover,
-.btn:focus {
+.hero-btn:hover,
+.hero-btn:focus {
+  transform: scale(1.03);
   /* В макете не указано */
 }
 
@@ -500,6 +503,16 @@ p {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background: none;
+  outline: none;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn-close:hover,
+.modal-btn-close:focus {
+  fill: var(--accent-clr);
+}
+
+.modal-btn-close:active {
 }
 
 /* Portfolio страница */
